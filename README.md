@@ -47,3 +47,5 @@ The website can also be viewed through GitHub Pages if it is enabled for the rep
 ## Project Repository
 
 GitHub: `https://github.com/sofiyamusabekova-del/legacy-store`
+
+
