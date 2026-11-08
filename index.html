@@ -1,27 +1,28 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>LEGACY — Timeless Minimalism</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title data-i18n="meta.home">LEGACY — Вне времени. Минимализм</title><link rel="stylesheet" href="style.css"></head><body>
 
 <header class="site-header">
   <a class="logo" href="index.html">LEGACY<span>®</span></a>
-  <button class="menu-toggle" aria-label="Open menu">☰</button>
+  <button class="menu-toggle" data-i18n-aria="menu.open" aria-label="Открыть меню">☰</button>
   <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="catalog.html">Collection</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="catalog.html" data-i18n="nav.collection">Коллекция</a>
+    <a href="about.html" data-i18n="nav.about">О нас</a>
+    <a href="contact.html" data-i18n="nav.contact">Контакты</a>
   </nav>
   <div class="header-tools">
-    <button id="currencyToggle" class="currency">USD / UZS</button>
-    <a class="bag" href="cart.html">Bag <span id="cartCount">0</span></a>
+    <div class="lang-switch"><button data-lang="ru" class="active">RU</button><button data-lang="en">EN</button><button data-lang="uz">UZ</button></div>
+    <button id="currencyToggle" class="currency">UZS / USD</button>
+    <a class="bag" href="cart.html"><i data-i18n="nav.bag">Корзина</i> <span id="cartCount">0</span></a>
   </div>
 </header>
 <main>
-<section class="hero"><div class="hero-copy"><div class="eyebrow">New York · Tashkent · Worldwide</div><h1>LEGACY</h1><p>Modern essentials shaped by quiet confidence. A considered wardrobe for people who prefer presence over noise.</p><div class="actions"><a class="btn dark" href="catalog.html">Shop Now</a><a class="btn" href="#story">Discover</a></div></div><div class="hero-image"></div></section>
-<section class="section"><div class="section-head"><h2>New arrivals</h2><p>06 / 06 pieces</p></div><div id="featuredGrid" class="grid"></div></section>
-<section id="story" class="split"><div class="split-img"></div><div class="split-copy"><div class="eyebrow">The LEGACY approach</div><h2>Less, but better.</h2><p>We design pieces that hold their shape, their character and their place in your wardrobe. Tailoring meets streetwear through a restrained palette and strong silhouettes.</p><a class="btn" href="about.html" style="width:max-content;margin-top:20px">Our story</a></div></section>
-<section class="features"><div class="feature"><b>01 / Fabric</b><p>Selected textures with a premium hand feel.</p></div><div class="feature"><b>02 / Cut</b><p>Relaxed proportions and clean construction.</p></div><div class="feature"><b>03 / Delivery</b><p>Worldwide shipping with tracked service.</p></div><div class="feature"><b>04 / Service</b><p>Personal support before and after purchase.</p></div></section>
+<section class="hero"><div class="hero-copy"><div class="eyebrow" data-i18n="hero.eyebrow">Нью-Йорк · Ташкент · По всему миру</div><h1>LEGACY</h1><p data-i18n="hero.text">Современная база, созданная со спокойной уверенностью. Продуманный гардероб для тех, кто выбирает присутствие, а не шум.</p><div class="actions"><a class="btn dark" href="catalog.html" data-i18n="hero.shop">Купить</a><a class="btn" href="#story" data-i18n="hero.discover">Узнать больше</a></div></div><div class="hero-image"></div></section>
+<section class="section"><div class="section-head"><h2 data-i18n="home.new">Новинки</h2><p id="homeCount"></p></div><div id="featuredGrid" class="grid"></div></section>
+<section id="story" class="split"><div class="split-img"></div><div class="split-copy"><div class="eyebrow" data-i18n="story.eyebrow">Подход LEGACY</div><h2 data-i18n="story.title">Меньше, но лучше.</h2><p data-i18n="story.text">Мы создаём вещи, которые держат форму, характер и своё место в вашем гардеробе. Классический крой встречается со streetwear через сдержанную палитру и выразительные силуэты.</p><a class="btn" href="about.html" style="width:max-content;margin-top:20px" data-i18n="story.btn">Наша история</a></div></section>
+<section class="features"><div class="feature"><b data-i18n="feat.1.t">01 / Ткань</b><p data-i18n="feat.1.p">Отборные текстуры с премиальной фактурой.</p></div><div class="feature"><b data-i18n="feat.2.t">02 / Крой</b><p data-i18n="feat.2.p">Свободные пропорции и чистая конструкция.</p></div><div class="feature"><b data-i18n="feat.3.t">03 / Доставка</b><p data-i18n="feat.3.p">Доставка по всему миру с отслеживанием.</p></div><div class="feature"><b data-i18n="feat.4.t">04 / Сервис</b><p data-i18n="feat.4.p">Личная поддержка до и после покупки.</p></div></section>
 </main>
 <footer class="footer">
-  <div><div class="logo">LEGACY<span>®</span></div><p>Quiet confidence. Designed to last.</p></div>
-  <div><p>Instagram · Telegram · legacy@studio.com</p><p>© 2026 LEGACY. All rights reserved.</p></div>
+  <div><div class="logo">LEGACY<span>®</span></div><p data-i18n="footer.tagline">Спокойная уверенность. Создано надолго.</p></div>
+  <div><p>Instagram · Telegram · legacy@studio.com</p><p data-i18n="footer.rights">© 2026 LEGACY. Все права защищены.</p></div>
 </footer>
-<div class="toast"></div><script src="script.js"></script></body></html>
+<div class="toast"></div><script type="module" src="js/main.js"></script></body></html>

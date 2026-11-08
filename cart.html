@@ -1,21 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Bag — LEGACY</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title data-i18n="meta.cart">Корзина — LEGACY</title><link rel="stylesheet" href="style.css"></head><body>
 <header class="site-header">
   <a class="logo" href="index.html">LEGACY<span>®</span></a>
-  <button class="menu-toggle" aria-label="Open menu">☰</button>
+  <button class="menu-toggle" data-i18n-aria="menu.open" aria-label="Открыть меню">☰</button>
   <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="catalog.html">Collection</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="catalog.html" data-i18n="nav.collection">Коллекция</a>
+    <a href="about.html" data-i18n="nav.about">О нас</a>
+    <a href="contact.html" data-i18n="nav.contact">Контакты</a>
   </nav>
   <div class="header-tools">
-    <button id="currencyToggle" class="currency">USD / UZS</button>
-    <a class="bag" href="cart.html">Bag <span id="cartCount">0</span></a>
+    <div class="lang-switch"><button data-lang="ru" class="active">RU</button><button data-lang="en">EN</button><button data-lang="uz">UZ</button></div>
+    <button id="currencyToggle" class="currency">UZS / USD</button>
+    <a class="bag" href="cart.html"><i data-i18n="nav.bag">Корзина</i> <span id="cartCount">0</span></a>
   </div>
 </header>
-<main class="cart"><div class="page-title" style="padding:0 0 40px"><div class="eyebrow">LEGACY / BAG</div><h1>Shopping bag</h1></div><div id="cartList"></div><div class="total">Total&nbsp;&nbsp;<strong id="cartTotal"></strong></div><div style="display:flex;justify-content:flex-end;margin-top:25px"><a class="btn dark" href="contact.html">Request order</a></div></main>
+<main class="cart"><div class="page-title" style="padding:0 0 40px"><div class="eyebrow" data-i18n="cart.eyebrow">LEGACY / КОРЗИНА</div><h1 data-i18n="cart.title">Корзина покупок</h1></div><div id="cartList"></div><div class="total"><span data-i18n="cart.total">Итого</span>&nbsp;&nbsp;<strong id="cartTotal"></strong></div><div style="display:flex;justify-content:flex-end;margin-top:25px"><a class="btn dark" href="contact.html" data-i18n="cart.request">Оформить заказ</a></div></main>
 <footer class="footer">
-  <div><div class="logo">LEGACY<span>®</span></div><p>Quiet confidence. Designed to last.</p></div>
-  <div><p>Instagram · Telegram · legacy@studio.com</p><p>© 2026 LEGACY. All rights reserved.</p></div>
+  <div><div class="logo">LEGACY<span>®</span></div><p data-i18n="footer.tagline">Спокойная уверенность. Создано надолго.</p></div>
+  <div><p>Instagram · Telegram · legacy@studio.com</p><p data-i18n="footer.rights">© 2026 LEGACY. Все права защищены.</p></div>
 </footer>
-<div class="toast"></div><script src="script.js"></script></body></html>
+<div class="toast"></div><script type="module" src="js/main.js"></script></body></html>
