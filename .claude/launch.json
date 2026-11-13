@@ -6,6 +6,18 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8000"],
       "port": 8000
+    },
+    {
+      "name": "legacy-store-api",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["dev-server.js", "--mock", "--port=8001"],
+      "port": 8001
+    },
+    {
+      "name": "legacy-store-live",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["dev-server.js", "--port=8002"],
+      "port": 8002
     }
   ]
 }

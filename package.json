@@ -1,0 +1,15 @@
+{
+  "name": "legacy-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LEGACY — интернет-магазин минималистичной одежды: витрина, админ-панель, заказы, оплата картой через Stripe, уведомления в Telegram.",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "dev:mock": "node dev-server.js --mock",
+    "seed": "node tools/seed.mjs",
+    "check:telegram": "node check-telegram.js",
+    "admin:password": "node make-admin.js",
+    "test:stripe": "node tools/stripe-selftest.js"
+  },
+  "engines": { "node": ">=20" }
+}

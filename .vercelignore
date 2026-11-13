@@ -1,0 +1,13 @@
+.env
+.env.local
+.claude
+data/store.json
+data/*.tmp
+dev-server.js
+check-telegram.js
+make-admin.js
+tools
+docs
+LEGACY
+script.js
+*.svg
